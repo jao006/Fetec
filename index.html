@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos do Scratch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ffab19;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            height: 95px;
+            margin-right: 55px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .games-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .games-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .game {
+            background-color: #4c97ff;
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .game img {
+            max-width: 100%;
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            display: flex;
+            margin: auto;
+        }
+
+        .game a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .play-button {
+            background-color: #ffab19;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .play-button:hover {
+            background-color: #e59b00;
+        }
+
+        .game:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #5c5858;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            color: white;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 796px) {
+            .games-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://juniortech.org/wp-content/uploads/2020/09/Scratch-cat-logo-300x300px.png" alt="Logo do Scratch" class="logo">
+        <h1>Jogos do Scratch</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="games-container">
+        <div class="games-column">
+            <div class="game">
+                <img src="imagens/swoniuc.png" alt="Jogo 1">
+                <a href="https://scratch.mit.edu/projects/1070685533" target="_blank">Sonic e Mario</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1070685533', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/bat.png" alt="Jogo 2">
+                <a href="https://scratch.mit.edu/projects/1066982033" target="_blank">Logic Game</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1066982033', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/genio.png" alt="Jogo 3">
+                <a href="https://scratch.mit.edu/projects/1070681588" target="_blank">Gênio Quiz</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1070681588', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/pokemon.png" alt="Jogo 4">
+                <a href="https://scratch.mit.edu/projects/1070193438" target="_blank">Pokemon Infinete</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1070193438', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/super minecraft.png" alt="Jogo 5">
+                <a href="https://scratch.mit.edu/projects/1071826286" target="_blank">Super Minecraft</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1071826286', '_blank')">Jogar</button>
+            </div>
+        </div>
+
+        <div class="games-column">
+            <div class="game">
+                <img src="imagens/angry bvirds.png" alt="Jogo 6">
+                <a href="https://scratch.mit.edu/projects/1064392867" target="_blank">Angry Birds</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1064392867', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/Minecraft 2D.png" alt="Jogo 7">
+                <a href="https://scratch.mit.edu/projects/1066994031" target="_blank">Minecraft 2D</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1066994031', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/Tetriz.png" alt="Jogo 8">
+                <a href="https://scratch.mit.edu/projects/1071804496" target="_blank">Tetris NES</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1071804496', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/ghetto.png" alt="Jogo 9">
+                <a href="https://scratch.mit.edu/projects/1070293458" target="_blank">GHETTO HEROES</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1070293458', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/remix.png" alt="Jogo 10">
+                <a href="https://scratch.mit.edu/projects/1073390686" target="_blank">Remix</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1073390686', '_blank')">Jogar</button>
+            </div>
+        </div>
+
+        <div class="games-column">
+            <div class="game">
+                <img src="imagens/spoong.png" alt="Jogo 11">
+                <a href="https://scratch.mit.edu/projects/1073877425" target="_blank">Spongebob Flight</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1073877425', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/zumbis f.png" alt="Jogo 12">
+                <a href="https://scratch.mit.edu/projects/1067544239" target="_blank">Zumbis Famintos</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1067544239', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/Super minecraft jump.png" alt="Jogo 13">
+                <a href="https://scratch.mit.edu/projects/1071826286" target="_blank">Super Minecraft</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1071826286', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/water.png" alt="Jogo 14">
+                <a href="https://scratch.mit.edu/projects/1067484457" target="_blank">Water sort</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1067484457', '_blank')">Jogar</button>
+            </div>
+            <div class="game">
+                <img src="imagens/mortal k.png" alt="Jogo 15">
+                <a href="https://scratch.mit.edu/projects/1070549007" target="_blank">Mortal Kombat</a>
+                <button class="play-button" onclick="window.open('https://scratch.mit.edu/projects/1070549007', '_blank')">Jogar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            ETEC Darcy Pereira de Moraes<br>
+            Endereço: R. Moisés Nalesso, 2888 - Vila Sao Gonçalo, Itapetininga - SP, 18206-650<br>
+            Contato: (15) 3271-1216<br>
+            Instagram: <a href="https://www.instagram.com/etecdarcypereira/" target="_blank">@Etec</a><br>
+        </p>
+    </footer>
+</body>
+</html>
